@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Basic",
+    "price": "$9/month",
+    "features": [
+      { "text": "AI Support", "available": true },
+      { "text": "Custom Reports", "available": true },
+      { "text": "Data Analysis", "available": false },
+      { "text": "24/7 Support", "available": false },
+      { "text": "Integration", "available": false }
+    ]
+  },
+  {
+    "name": "Gold",
+    "price": "$19/month",
+    "features": [
+      { "text": "AI Support", "available": true },
+      { "text": "Custom Reports", "available": true },
+      { "text": "Data Analysis", "available": true },
+      { "text": "24/7 Support", "available": true },
+      { "text": "Integration", "available": false }
+    ],
+    "highlight": true,
+    "textColor": "text-white",
+    "itemTextColor": "text-yellow-300"
+  },
+  {
+    "name": "Diamond",
+    "price": "$29/month",
+    "features": [
+      { "text": "AI Support", "available": true },
+      { "text": "Custom Reports", "available": true },
+      { "text": "Data Analysis", "available": true },
+      { "text": "24/7 Support", "available": true },
+      { "text": "Integration", "available": true }
+    ]
+  }
+]
