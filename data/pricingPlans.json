@@ -1,8 +1,9 @@
 [
   {
     "name": "Basic",
-    "price": "$9/month",
+    "price": "Free",
     "features": [
+      { "text": "10 requests per day", "available": true },
       { "text": "AI Support", "available": true },
       { "text": "Custom Reports", "available": true },
       { "text": "Data Analysis", "available": false },
@@ -12,8 +13,9 @@
   },
   {
     "name": "Gold",
-    "price": "$19/month",
+    "price": "$5/month",
     "features": [
+      { "text": "100 requests per day", "available": true },
       { "text": "AI Support", "available": true },
       { "text": "Custom Reports", "available": true },
       { "text": "Data Analysis", "available": true },
@@ -26,8 +28,9 @@
   },
   {
     "name": "Diamond",
-    "price": "$29/month",
+    "price": "$9/month",
     "features": [
+      { "text": "Unlimited requests", "available": true },
       { "text": "AI Support", "available": true },
       { "text": "Custom Reports", "available": true },
       { "text": "Data Analysis", "available": true },

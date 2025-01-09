@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "./ui/card";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { Map, BrainCircuit } from "lucide-react";
 
 const integrations = [
   {
@@ -15,7 +16,11 @@ const integrations = [
       "Street view integration",
       "Custom map markers",
       "Route optimization",
+      "Popularity heatmap visualization",
+      "Crowd prediction analytics",
+      "Accessibility analysis",
     ],
+    icon: Map,
   },
   {
     name: "OpenAI",
@@ -27,7 +32,11 @@ const integrations = [
       "Natural language queries",
       "Personalized suggestions",
       "Multilingual support",
+      "Sentiment analysis from reviews",
+      "Dynamic pricing insights",
+      "Localized language translation",
     ],
+    icon: BrainCircuit,
   },
 ];
 
@@ -69,17 +78,13 @@ const IntegrationCard = ({ integration, index }) => (
     animate="visible"
     variants={fadeIn}
     transition={{ duration: 0.5, delay: index * 0.2 }}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
   >
     <Card className="p-8 flex flex-col items-center justify-center gap-4 hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-800 h-full">
-      <img
-        src={integration.logo}
-        alt={integration.name}
-        className="h-20 w-20 object-contain bg-transparent opacity-90 hover:opacity-100 transition-opacity"
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = "/img/travel-ai.png";
-        }}
-      />
+      <div className="p-4 bg-primary/10 rounded-full">
+        <integration.icon className="w-8 h-8 text-primary" />
+      </div>
       <h3 className="text-xl font-semibold">{integration.name}</h3>
       <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
         {integration.description}
@@ -107,7 +112,7 @@ export default function Integration() {
           transition={{ duration: 0.5 }}
           className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
         >
-          Powerful Integrations
+          Advanced Integrations
         </motion.h1>
 
         <motion.p
@@ -117,8 +122,8 @@ export default function Integration() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          Travel AI seamlessly integrates with leading platforms to deliver an
-          enhanced travel experience
+          Travel AI integrates with leading platforms to deliver a superior
+          travel experience
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
